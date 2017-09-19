@@ -4,11 +4,14 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Prism.Services;
 
 namespace PrismUnity.ViewModels
 {
     public class MainPageViewModel : BindableBase, INavigationAware
     {
+        IPageDialogService pageDialogService;
+        public DelegateCommand ClickMeCommand { get; set; }
         private string _title;
         public string Title
         {
@@ -16,9 +19,15 @@ namespace PrismUnity.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        public MainPageViewModel()
+        public MainPageViewModel(IPageDialogService _pageDialogService)
         {
+            pageDialogService = _pageDialogService;
+            ClickMeCommand = new DelegateCommand(ClickMeAction);
+        }
 
+        void ClickMeAction()
+        {
+            pageDialogService.DisplayAlertAsync("Button Clicked", "the message will come here", "OK");
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
