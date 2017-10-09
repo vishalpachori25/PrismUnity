@@ -1,9 +1,6 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Prism.Services;
 
 namespace PrismUnity.ViewModels
@@ -12,7 +9,7 @@ namespace PrismUnity.ViewModels
     {
         IPageDialogService pageDialogService;
         public DelegateCommand ClickMeCommand { get; set; }
-        private string _title;
+        string _title;
         public string Title
         {
             get { return _title; }
