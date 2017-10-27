@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismUnity.Droid", "PrismUn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDemo", "TestDemo\TestDemo.csproj", "{5EC11925-6695-4466-919D-722A9BFCE640}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismUnity.TestRunner.iOS", "PrismUnity.TestRunner\PrismUnity.TestRunner.iOS.csproj", "{997D76C6-3899-4FEB-B094-B3779CB9D2F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,5 +69,17 @@ Global
 		{5EC11925-6695-4466-919D-722A9BFCE640}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{5EC11925-6695-4466-919D-722A9BFCE640}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{5EC11925-6695-4466-919D-722A9BFCE640}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{997D76C6-3899-4FEB-B094-B3779CB9D2F6}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{997D76C6-3899-4FEB-B094-B3779CB9D2F6}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{997D76C6-3899-4FEB-B094-B3779CB9D2F6}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{997D76C6-3899-4FEB-B094-B3779CB9D2F6}.Release|Any CPU.Build.0 = Release|iPhone
+		{997D76C6-3899-4FEB-B094-B3779CB9D2F6}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{997D76C6-3899-4FEB-B094-B3779CB9D2F6}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{997D76C6-3899-4FEB-B094-B3779CB9D2F6}.Release|iPhone.ActiveCfg = Release|iPhone
+		{997D76C6-3899-4FEB-B094-B3779CB9D2F6}.Release|iPhone.Build.0 = Release|iPhone
+		{997D76C6-3899-4FEB-B094-B3779CB9D2F6}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{997D76C6-3899-4FEB-B094-B3779CB9D2F6}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{997D76C6-3899-4FEB-B094-B3779CB9D2F6}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{997D76C6-3899-4FEB-B094-B3779CB9D2F6}.Debug|iPhone.Build.0 = Debug|iPhone
 	EndGlobalSection
 EndGlobal

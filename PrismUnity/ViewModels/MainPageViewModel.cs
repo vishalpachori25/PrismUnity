@@ -2,6 +2,7 @@
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
+using PrismUnity.Services;
 
 namespace PrismUnity.ViewModels
 {
@@ -15,16 +16,18 @@ namespace PrismUnity.ViewModels
             get { return _title; }
             set { SetProperty(ref _title, value); }
         }
-
-        public MainPageViewModel(IPageDialogService _pageDialogService)
+        string fromPlatforms = "I don't know";
+        public MainPageViewModel(INavigationService navigationService, IPageDialogService _pageDialogService, IDependancyServiceDemo dsDemo)
         {
             pageDialogService = _pageDialogService;
             ClickMeCommand = new DelegateCommand(ClickMeAction);
+            fromPlatforms = dsDemo.PlatformName();
         }
 
         void ClickMeAction()
         {
-            pageDialogService.DisplayAlertAsync("Button Clicked", "the message will come here", "OK");
+
+            pageDialogService.DisplayAlertAsync("Button Clicked", "the message will come here from " + fromPlatforms, "OK");
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
